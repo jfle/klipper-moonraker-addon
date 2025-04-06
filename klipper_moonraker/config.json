@@ -1,0 +1,18 @@
+{
+  "name": "Klipper + Moonraker",
+  "version": "1.0",
+  "slug": "klipper_moonraker",
+  "description": "Klipper and Moonraker in one container for 3D printer control",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": false,
+  "privileged": ["SYS_ADMIN", "SYS_RAWIO"],
+  "devices": ["/dev/ttyUSB0"],
+  "usb": true,
+  "ports": {
+    "7125/tcp": 7125
+  },
+  "map": ["config:rw", "ssl", "share", "addons:rw", "backup:rw"],
+  "options": {},
+  "schema": {}
+}
