@@ -1,0 +1,8 @@
+name: Klipper Moonraker
+version: "0.1.0"
+slug: klipper_moonraker
+description: Klipper with Moonraker API
+url: https://github.com/jfle/klipper-moonraker-addon
+arch:
+  - armv7
+  - aarch64
